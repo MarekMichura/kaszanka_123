@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",                   /* Cel kompilacji ECMAScript */
+    "module": "commonjs",               /* Używany moduł systemowy */
+    "outDir": "./dist",                /* Katalog wyjściowy dla plików JS */
+    "rootDir": "./src",                /* Katalog z kodem źródłowym */
+    "strict": true,                    /* Włącza wszystkie ścisłe kontrole */
+    "esModuleInterop": true,           /* Umożliwia importowanie modułów ES6 */
+    "skipLibCheck": true,              /* Pomija sprawdzanie plików deklaracji typów */
+    "forceConsistentCasingInFileNames": true  /* Wymusza spójność wielkości liter w nazwach plików */
+  }
+}
