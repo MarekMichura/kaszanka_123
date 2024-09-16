@@ -10,10 +10,14 @@ puppeteer.use(StealthPlugin());
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(RequestTimeout(240000));
-app.use(AuthenticationCheck);
+// app.use(AuthenticationCheck);
 
 app.use("/Api/V1/librus", require("./Routes/Librus"));
 app.use("/Api/V1/zstio", require("./Routes/ZSTIO"));
+
+app.get("/cos",async(req,res)=>{
+  res.send("123")
+})
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
