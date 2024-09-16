@@ -1,0 +1,17 @@
+networks:
+  app-network:
+    driver: bridge
+
+services:
+  librus:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: librus
+    image: librus
+    ports:
+      - "80:3000"
+    networks:
+      - app-network
+    volumes:
+      - .:/usr/src/app

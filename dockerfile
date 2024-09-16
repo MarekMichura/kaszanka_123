@@ -5,9 +5,9 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
-RUN npx puppeteer browsers install
+# COPY package*.json ./
+# RUN npm ci
+# COPY . .
+# RUN npm run build
+# RUN npx puppeteer browsers install
 CMD [ "node", "./dist/index.js" ]

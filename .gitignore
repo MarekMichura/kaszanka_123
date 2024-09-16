@@ -2,3 +2,4 @@
 /dist
 /example.png
 /node_modules
+/.cache
